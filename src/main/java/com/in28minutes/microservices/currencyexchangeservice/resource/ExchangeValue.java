@@ -23,6 +23,9 @@ public class ExchangeValue {
 
 	@Transient
 	private String exchangeEnvironmentInfo;
+	
+	@Transient
+	private String message;
 
 	public ExchangeValue() {
 
@@ -59,5 +62,15 @@ public class ExchangeValue {
 	public void setExchangeEnvironmentInfo(String environmentInfo) {
 		this.exchangeEnvironmentInfo = environmentInfo;
 	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	
+	
 
 }

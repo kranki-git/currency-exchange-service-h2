@@ -30,6 +30,7 @@ public class CurrencyExchangeController {
 		printAllHeaders(headers);
 
 		ExchangeValue exchangeValue = repository.findByFromAndTo(from, to);
+		exchangeValue.setMessage("This is Updated version!");
 
 		LOGGER.info("{} {} {}", from, to, exchangeValue);
 
